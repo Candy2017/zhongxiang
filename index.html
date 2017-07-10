@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>众象官网</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Free HTML5 Template by FreeHTML5.co" />
+		<meta name="keywords" content="bootstrap, html5, css3, mobile first, responsive" />
+		<meta name="author" content="FreeHTML5.co" />		
+		<link rel="stylesheet" href="css/jquery.fullPage.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<!--顶部导航start-->
+		<nav class="navbar" id="nav_top">
+		    <div class="container-fluid">
+		        <div class="navbar-header">
+		            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+		                    data-target="#bs" aria-expanded="false">
+		                <span class="sr-only"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		            </button>
+		            <a class="navbar-brand logo"><img src="img/logo.png" alt=""></a>
+		        </div>
+		        <div class="collapse navbar-collapse" id="bs">
+		            <ul class="nav navbar-nav navbar-right" id="menu">
+		                <li class="active"><a href="#">首页</a></li>
+				        <li><a href="#">关于众象</a></li>
+				        <li><a href="#">众象业务</a></li>
+				        <li><a href="#">加入众象</a></li>
+				        <li><a href="#">合作伙伴</a></li>
+		            </ul>
+		        </div>
+		    </div>
+		</nav>
+		<!--顶部导航end-->
+		<!--content start-->			
+		<div id="fullpage">	
+			<section class="section">					
+				<img src="img/bg1.jpg" class="bg" alt="">
+				<div class="viplus">
+					<img src="img/index.png" alt="">
+					<div class="service">
+						<span>领先的用户忠诚度管理</span><span>和体验服务整合提供方</span>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<img src="img/bg2.jpg" class="bg" alt="">
+				<div class="rec">
+					<div class="about">
+						<img src="img/about.png" class="aboutImg" alt="">
+						<p>关于众象</p>	
+						<span>优质的服务建立在完善的体验和真实的转化之上</span>	
+						<a href="#" class="clickIn">点击进入<span class="arrow"></span></a>			
+					</div>
+				</div>
+			</section>	
+			<section class="section">
+				<img src="img/bg3.jpg" class="bg" alt="">
+				<div class="rec">
+					<div class="about">
+						<img src="img/business.png" class="businessImg" alt="">
+							<p>众象业务</p>
+							<span>帮我们的客户更好的服务其用户，点击以更了解我们的服务</span>						
+						<a href="#" class="clickIn">点击进入<span class="arrow"></span></a>		
+					</div>
+				</div>
+			</section>	
+			<section class="section">
+				<img src="img/bg4.jpg" class="bg" alt="">
+					<div class="rec">
+						<div class="about join">
+							<img src="img/join.png" class="joinImg" alt="">
+							<p>加入众象</p>
+							<span>人才是公司发展的基石,点击以了解我们现在空缺的岗位</span>
+							<a href="#" class="clickIn">点击进入<span class="arrow"></span></a>		
+						</div>
+					</div>				
+			</section>	
+			<section class="section">		
+				<img src="img/bg5.jpg" class="bg" alt="">	
+					<div class="rec">
+						<div class="about partner">
+							<img src="img/partner.png" class="partnerImg" alt="">
+							<p>合作伙伴</p>
+							<p>优质银行客户,一线供应链品牌资源</p>
+							<p>助理品牌形象提升,合作共赢</p>							
+							<a href="#" class="clickIn">点击进入<span class="arrow"></span></a>		
+						</div>
+					</div>										
+			</section>									
+		</div>
+		<!--content end-->
+		<!--底部 start-->
+		<footer class="bottom">
+			<div class="container-fluid">
+		  		<ul class="list-inline footer_bottom clearfix">
+		  			<li class="web"><a href="#">WWW.VIPLUS.COM</a><span>|</span>
+						<span>沪ICP备0000000000号</span>
+		  			</li>
+			        <li class="contact">
+						<ul class="list-inline">
+							<li>
+								<span class="email"></span><span>E-mail us</span>
+							</li>
+							<li><span class="tel"></span><span>+021-88-8888888</span></li>
+						</ul>
+			        </li>
+			     </ul>						    	
+	  		</div>	
+		</footer>
+		<!--底部 end-->
+			
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easings.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+		<script>
+			$(document).ready(function(){
+				//激活fullpage
+				$("#fullpage").fullpage({
+					anchors:['page1','page2','page3','page4','page5'],
+					continuousVertical:true,
+					navigation:true,
+					navigationPosition:'left',
+					navigationTooltips:['page1','page2','page3','page4','page5'],
+					setScrollingSpeed:1300,
+					css3:true,
+				});	
+
+				$('div#fp-nav').children('ul').before('<div style="margin: 0 auto;width:1px;height:4.286rem;background-color: #94B7D9;"></div>');	
+			})
+			var height = $(window).height();
+			$('section .bg').css('height',height);	
+			if(window.screen.width < 1200){
+				$('img').not('.bg').addClass('img-responsive');
+			}
+
+		</script>	
+	</body>
+</html>

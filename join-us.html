@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<!--lang="zh-Hans" 代表 Chinese (Simplified)-->
+<!--关于 html lang 标签的资料在这里找到: http://www.w3schools.com/tags/ref_language_codes.asp-->
+
+<head>
+
+    <meta charset="utf-8">
+    <!--浏览器判断-->
+    <title>加入我们</title>
+    <meta name="description" content="众像官网">
+    <meta name="author" content="众像官网">
+    <!-- 让360双核浏览器用webkit内核渲染页面 !!! 注意，这行最好放在前面，防止浏览器开始解析的时候采用其它内置的渲染方案  -->
+    <meta name="renderer" content="webkit">
+    <!-- 让IE浏览器用最高级内核渲染页面 还有用 Chrome 框架的页面用webkit 内核 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--高版本安卓Chrome卡片式切换的时候的皮肤（卡片）颜色-->
+    <meta name="theme-color" content="#9f0800">
+
+    <!-- IOS6全屏 Chrome高版本全屏 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Mobile Specific Metas -->
+    <!-- !!!注意 minimal-ui 是IOS7.1的新属性，最小化浏览器UI，但是在 iOS8.1 被取消 -->
+    <!--Safari 将会对有内容溢出 Viewport 区域的页面进行缩放适配，使溢出的内容完整展示而不出现滚动条，而在 Viewport 设置中引入了一个新属性 shrink-to-fit = no，该属性可以禁止这种缩放行为的发生。-->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no"> -->
+    <!-- 指定苹果设备添加到主屏的标题 -->
+    <meta name="apple-mobile-web-app-title" content="title2">
+
+    <!--调试阶段禁止缓存,例如微信，QQ浏览器缓存-->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- Enable iOS 自动检测电话号码 -->
+    <meta name="format-detection" content="telephone=yes">
+
+    <!-- 禁止百度转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+    <!-- 针对手持设备优化  -->
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!--or landscape-->
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!--or landscape-->
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <!--使用了application这种应用模式后，页面讲默认全屏，禁止长按菜单，禁止手势，标准排版，以及强制图片显示-->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/join-us.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+</header>
+<!-- 头部导航 - end -->
+
+<!-- main主内容 -->
+<section class="main">
+    <div class="com-banner">
+        <img src="img/page4/banner04.jpg" class="img-responsive">
+        <div class="banner-title">
+            <p class="big-text">JOIN US</p>
+            <p class="middle-text">加入我们</p>
+            <p class="small-text">人才是公司发展的基石，点击以了解我们现在空缺的岗位</p>
+        </div>
+    </div>
+    <div class="content-wrap">
+        <div class="shadow-title">
+            <h2>JOIN US</h2>
+            <h3>加入众像</h3>
+        </div>
+        <p class="project-content">我们提供优厚且公平的激励机制，扁平化的管理氛围，快速的决策机制。如果你渴望高薪，希望突破自我。 加入我们，我们会为你提供更广阔的发展平台。加入我们，成为众像的一员，让我们一起去开拓未来。</p>
+        <div class="project-content-box">
+            <p class="project-content">众像科技作为电信运营商及各大银行等世界五百强企业的合作伙伴，依托多年运营经验，为客户提供从供应链至销售的一站式管理解决方案。助力企业管理创新，提升用户对合作伙伴品牌的忠诚度。</p>
+        </div>
+    </div>
+
+    <!-- 社会招聘 -->
+    <div class="full-screen-banner">
+        <img src="img/page4/social-recruitment.jpg" class="img-responsive">
+        <div class="banner-text">
+            <p class="e-title">SOCIAL RECRUITMENT</p>
+            <p class="c-title">社会招聘</p>
+            <p class="banner-text-info">我们正在寻找更多才华横溢、怀揣梦想的伙伴，和我们一起做充满挑战的事情。</p>
+        </div>
+    </div>
+    <div class="content-wrap">
+        <div class="recruitment-wrap">
+
+            <!-- 修改内容时 注意 data-show 和 id 名字必须保持唯一且相同！！ 例如下面的 job1 -->
+            <div class="recruitment-item">
+                <div class="job-title clearfix">
+                    <div class="pull-left"><span class="job-place">上海</span><span class="job-name">产品设计师</span></div>
+                    <div class="pull-right"><span class="job-title-icon icon_down" data-show="job1"></span></div>
+                </div>
+                <div class="job-instruction" id="job1">
+                    <dl class="job-instruction-list">
+                        <dt>期待中的你</dt>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你有超多深藏不露的技能，能把你想像中的东西变成现实</dd>
+                        <dd>你喜欢和其他设计师一起切磋新想法，分享知识</dd>
+                        <dd>你有超强的人际和分析能力。你不会害怕与别人讨论你的真实想法，发现新的问题，用机智的方法解决他们</dd>
+                        <dd>你有面对商户、终端用户、和开发者的设计经验，能够以不同角度、面对不同类型的用户进行沟通和思考</dd>
+                        <dd>你对用户体验研究有兴趣，并想要尝试新的设计方法</dd>
+                        <dd>你能够透过用户研究方法发现用户真实的需求，透过用户测试、访问、调查或其他方式获取对产品有价值的数据，并对其解读</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                    </dl>
+                    <dl class="job-instruction-list">
+                        <dt>你将负责</dt>
+                        <dd>将负责 众像的 Web 产品 UI/UX 设计</dd>
+                        <dd>优先考虑有数你据可视化、交互设计经验的设计师</dd>
+                        <dd>优先考虑有 Web 前端基础知识（HTML+CSS)的候选人</dd>
+                    </dl>
+                    <dl class="job-instruction-list">
+                        <dt>能给你的</dt>
+                        <dd>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</dd>
+                        <dd>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</dd>
+                        <dd>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义众像</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="recruitment-item">
+                <div class="job-title clearfix">
+                    <div class="pull-left"><span class="job-place">上海</span><span class="job-name">商务总监</span></div>
+                    <div class="pull-right"><span class="job-title-icon icon_down" data-show="job2"></span></div>
+                </div>
+                <div class="job-instruction" id="job2">
+                    <dl class="job-instruction-list">
+                        <dt>期待中的你</dt>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你有超多深藏不露的技能，能把你想像中的东西变成现实</dd>
+                        <dd>你喜欢和其他设计师一起切磋新想法，分享知识</dd>
+                        <dd>你有超强的人际和分析能力。你不会害怕与别人讨论你的真实想法，发现新的问题，用机智的方法解决他们</dd>
+                        <dd>你有面对商户、终端用户、和开发者的设计经验，能够以不同角度、面对不同类型的用户进行沟通和思考</dd>
+                        <dd>你对用户体验研究有兴趣，并想要尝试新的设计方法</dd>
+                        <dd>你能够透过用户研究方法发现用户真实的需求，透过用户测试、访问、调查或其他方式获取对产品有价值的数据，并对其解读</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                    </dl>
+                    <dl class="job-instruction-list">
+                        <dt>你将负责</dt>
+                        <dd>将负责 众像的 Web 产品 UI/UX 设计</dd>
+                        <dd>优先考虑有数你据可视化、交互设计经验的设计师</dd>
+                        <dd>优先考虑有 Web 前端基础知识（HTML+CSS)的候选人</dd>
+                    </dl>
+                    <dl class="job-instruction-list">
+                        <dt>能给你的</dt>
+                        <dd>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</dd>
+                        <dd>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</dd>
+                        <dd>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义众像</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="recruitment-item">
+                <div class="job-title clearfix">
+                    <div class="pull-left"><span class="job-place">上海</span><span class="job-name">策划师</span></div>
+                    <div class="pull-right"><span class="job-title-icon icon_down" data-show="job3"></span></div>
+                </div>
+                <div class="job-instruction" id="job3">
+                    <dl class="job-instruction-list">
+                        <dt>期待中的你</dt>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你有超多深藏不露的技能，能把你想像中的东西变成现实</dd>
+                        <dd>你喜欢和其他设计师一起切磋新想法，分享知识</dd>
+                        <dd>你有超强的人际和分析能力。你不会害怕与别人讨论你的真实想法，发现新的问题，用机智的方法解决他们</dd>
+                        <dd>你有面对商户、终端用户、和开发者的设计经验，能够以不同角度、面对不同类型的用户进行沟通和思考</dd>
+                        <dd>你对用户体验研究有兴趣，并想要尝试新的设计方法</dd>
+                        <dd>你能够透过用户研究方法发现用户真实的需求，透过用户测试、访问、调查或其他方式获取对产品有价值的数据，并对其解读</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                    </dl>
+                    <dl class="job-instruction-list">
+                        <dt>你将负责</dt>
+                        <dd>将负责 众像的 Web 产品 UI/UX 设计</dd>
+                        <dd>优先考虑有数你据可视化、交互设计经验的设计师</dd>
+                        <dd>优先考虑有 Web 前端基础知识（HTML+CSS)的候选人</dd>
+                    </dl>
+                    <dl class="job-instruction-list">
+                        <dt>能给你的</dt>
+                        <dd>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</dd>
+                        <dd>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</dd>
+                        <dd>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义众像</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="recruitment-item">
+                <div class="job-title clearfix">
+                    <div class="pull-left"><span class="job-place">上海</span><span class="job-name">财务</span></div>
+                    <div class="pull-right"><span class="job-title-icon icon_down" data-show="job4"></span></div>
+                </div>
+                <div class="job-instruction" id="job4">
+                    <dl class="job-instruction-list">
+                        <dt>期待中的你</dt>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你有超多深藏不露的技能，能把你想像中的东西变成现实</dd>
+                        <dd>你喜欢和其他设计师一起切磋新想法，分享知识</dd>
+                        <dd>你有超强的人际和分析能力。你不会害怕与别人讨论你的真实想法，发现新的问题，用机智的方法解决他们</dd>
+                        <dd>你有面对商户、终端用户、和开发者的设计经验，能够以不同角度、面对不同类型的用户进行沟通和思考</dd>
+                        <dd>你对用户体验研究有兴趣，并想要尝试新的设计方法</dd>
+                        <dd>你能够透过用户研究方法发现用户真实的需求，透过用户测试、访问、调查或其他方式获取对产品有价值的数据，并对其解读</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                    </dl>
+                    <dl class="job-instruction-list">
+                        <dt>你将负责</dt>
+                        <dd>将负责 众像的 Web 产品 UI/UX 设计</dd>
+                        <dd>优先考虑有数你据可视化、交互设计经验的设计师</dd>
+                        <dd>优先考虑有 Web 前端基础知识（HTML+CSS)的候选人</dd>
+                    </dl>
+                    <dl class="job-instruction-list">
+                        <dt>能给你的</dt>
+                        <dd>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</dd>
+                        <dd>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</dd>
+                        <dd>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义众像</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="recruitment-item">
+                <div class="job-title clearfix">
+                    <div class="pull-left"><span class="job-place">上海</span><span class="job-name">跟单员</span></div>
+                    <div class="pull-right"><span class="job-title-icon icon_down" data-show="job5"></span></div>
+                </div>
+                <div class="job-instruction" id="job5">
+                    <dl class="job-instruction-list">
+                        <dt>期待中的你</dt>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你有超多深藏不露的技能，能把你想像中的东西变成现实</dd>
+                        <dd>你喜欢和其他设计师一起切磋新想法，分享知识</dd>
+                        <dd>你有超强的人际和分析能力。你不会害怕与别人讨论你的真实想法，发现新的问题，用机智的方法解决他们</dd>
+                        <dd>你有面对商户、终端用户、和开发者的设计经验，能够以不同角度、面对不同类型的用户进行沟通和思考</dd>
+                        <dd>你对用户体验研究有兴趣，并想要尝试新的设计方法</dd>
+                        <dd>你能够透过用户研究方法发现用户真实的需求，透过用户测试、访问、调查或其他方式获取对产品有价值的数据，并对其解读</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                    </dl>
+                    <dl class="job-instruction-list">
+                        <dt>你将负责</dt>
+                        <dd>将负责 众像的 Web 产品 UI/UX 设计</dd>
+                        <dd>优先考虑有数你据可视化、交互设计经验的设计师</dd>
+                        <dd>优先考虑有 Web 前端基础知识（HTML+CSS)的候选人</dd>
+                    </dl>
+                    <dl class="job-instruction-list">
+                        <dt>能给你的</dt>
+                        <dd>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</dd>
+                        <dd>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</dd>
+                        <dd>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义众像</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 校园招聘 -->
+    <div class="full-screen-banner">
+        <img src="img/page4/campus-recruitment.jpg" class="img-responsive">
+        <div class="banner-text">
+            <p class="e-title">CAMPUS RECRUITMENT</p>
+            <p class="c-title">校园招聘</p>
+            <p class="banner-text-info">我们正在寻找更多才华横溢、怀揣梦想的伙伴，和我们一起做充满挑战的事情。</p>
+        </div>
+    </div>
+    <div class="content-wrap">
+        <div class="recruitment-wrap">
+            <div class="recruitment-item">
+                <div class="job-title clearfix">
+                    <div class="pull-left"><span class="job-place">上海</span><span class="job-name">产品设计师</span></div>
+                    <div class="pull-right"><span class="job-title-icon icon_down" data-show="job6"></span></div>
+                </div>
+                <div class="job-instruction" id="job6">
+                    <dl class="job-instruction-list">
+                        <dt>期待中的你</dt>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你有超多深藏不露的技能，能把你想像中的东西变成现实</dd>
+                        <dd>你喜欢和其他设计师一起切磋新想法，分享知识</dd>
+                        <dd>你有超强的人际和分析能力。你不会害怕与别人讨论你的真实想法，发现新的问题，用机智的方法解决他们</dd>
+                        <dd>你有面对商户、终端用户、和开发者的设计经验，能够以不同角度、面对不同类型的用户进行沟通和思考</dd>
+                        <dd>你对用户体验研究有兴趣，并想要尝试新的设计方法</dd>
+                        <dd>你能够透过用户研究方法发现用户真实的需求，透过用户测试、访问、调查或其他方式获取对产品有价值的数据，并对其解读</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                    </dl>
+                    <dl class="job-instruction-list">
+                        <dt>你将负责</dt>
+                        <dd>将负责 众像的 Web 产品 UI/UX 设计</dd>
+                        <dd>优先考虑有数你据可视化、交互设计经验的设计师</dd>
+                        <dd>优先考虑有 Web 前端基础知识（HTML+CSS)的候选人</dd>
+                    </dl>
+                    <dl class="job-instruction-list">
+                        <dt>能给你的</dt>
+                        <dd>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</dd>
+                        <dd>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</dd>
+                        <dd>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义众像</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="recruitment-item">
+                <div class="job-title clearfix">
+                    <div class="pull-left"><span class="job-place">上海</span><span class="job-name">商务总监</span></div>
+                    <div class="pull-right"><span class="job-title-icon icon_down" data-show="job7"></span></div>
+                </div>
+                <div class="job-instruction" id="job7">
+                    <dl class="job-instruction-list">
+                        <dt>期待中的你</dt>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你有超多深藏不露的技能，能把你想像中的东西变成现实</dd>
+                        <dd>你喜欢和其他设计师一起切磋新想法，分享知识</dd>
+                        <dd>你有超强的人际和分析能力。你不会害怕与别人讨论你的真实想法，发现新的问题，用机智的方法解决他们</dd>
+                        <dd>你有面对商户、终端用户、和开发者的设计经验，能够以不同角度、面对不同类型的用户进行沟通和思考</dd>
+                        <dd>你对用户体验研究有兴趣，并想要尝试新的设计方法</dd>
+                        <dd>你能够透过用户研究方法发现用户真实的需求，透过用户测试、访问、调查或其他方式获取对产品有价值的数据，并对其解读</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                    </dl>
+                    <dl class="job-instruction-list">
+                        <dt>你将负责</dt>
+                        <dd>将负责 众像的 Web 产品 UI/UX 设计</dd>
+                        <dd>优先考虑有数你据可视化、交互设计经验的设计师</dd>
+                        <dd>优先考虑有 Web 前端基础知识（HTML+CSS)的候选人</dd>
+                    </dl>
+                    <dl class="job-instruction-list">
+                        <dt>能给你的</dt>
+                        <dd>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</dd>
+                        <dd>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</dd>
+                        <dd>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义众像</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="recruitment-item">
+                <div class="job-title clearfix">
+                    <div class="pull-left"><span class="job-place">上海</span><span class="job-name">策划师</span></div>
+                    <div class="pull-right"><span class="job-title-icon icon_down" data-show="job8"></span></div>
+                </div>
+                <div class="job-instruction" id="job8">
+                    <dl class="job-instruction-list">
+                        <dt>期待中的你</dt>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你有超多深藏不露的技能，能把你想像中的东西变成现实</dd>
+                        <dd>你喜欢和其他设计师一起切磋新想法，分享知识</dd>
+                        <dd>你有超强的人际和分析能力。你不会害怕与别人讨论你的真实想法，发现新的问题，用机智的方法解决他们</dd>
+                        <dd>你有面对商户、终端用户、和开发者的设计经验，能够以不同角度、面对不同类型的用户进行沟通和思考</dd>
+                        <dd>你对用户体验研究有兴趣，并想要尝试新的设计方法</dd>
+                        <dd>你能够透过用户研究方法发现用户真实的需求，透过用户测试、访问、调查或其他方式获取对产品有价值的数据，并对其解读</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                        <dd>你热爱创造既美丽、又好用的东西</dd>
+                    </dl>
+                    <dl class="job-instruction-list">
+                        <dt>你将负责</dt>
+                        <dd>将负责 众像的 Web 产品 UI/UX 设计</dd>
+                        <dd>优先考虑有数你据可视化、交互设计经验的设计师</dd>
+                        <dd>优先考虑有 Web 前端基础知识（HTML+CSS)的候选人</dd>
+                    </dl>
+                    <dl class="job-instruction-list">
+                        <dt>能给你的</dt>
+                        <dd>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</dd>
+                        <dd>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</dd>
+                        <dd>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义众像</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- main主内容 - end -->
+
+<!-- 页脚 -->
+<footer class="footer Zh-X-footer">
+    <div class="footer-wrap clearfix">
+        <div class="pull-left">
+            <img src="img/page5/footer-logo.png" class="img-responsive">
+        </div>
+        <ul class="pull-right footer-link">
+            <li>
+                <dl class="link-item">
+                    <dt><img src="img/page5/foot-icon-about-us.png" class="link-item-icon">关于我们</dt>
+                    <dd><a href="#">发展理念</a></dd>
+                    <dd><a href="#">众像服务</a></dd>
+                    <dd><a href="#">用人理念</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl class="link-item">
+                    <dt><img src="img/page5/foot-icon-business.png" class="link-item-icon">众像业务</dt>
+                    <dd><a href="#">用户忠诚度管理方案</a></dd>
+                    <dd><a href="#">分期支付解决方案</a></dd>
+                    <dd><a href="#">娱乐营销解决方案 </a></dd>
+                    <dd><a href="#">员工福利管理解决方案</a></dd>
+                    <dd><a href="#">产业链投资</a></dd>
+                    <dd><a href="#">企业人力资源解决方案</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl class="link-item">
+                    <dt><img src="img/page5/foot-icon-join-us.png" class="link-item-icon">加入我们</dt>
+                    <dd><a href="#">加入众像</a></dd>
+                    <dd><a href="#">社会招聘</a></dd>
+                    <dd><a href="#">校园招聘</a></dd>
+                </dl>
+            </li>
+            <li class="partner-li">
+                <dl class="link-item">
+                    <dt><img src="img/page5/foot-icon-partner.png" class="link-item-icon">合作伙伴</dt>
+                    <dd><a href="#">金融</a></dd>
+                    <dd><a href="#">电信</a></dd>
+                    <dd><a href="#">消费品</a></dd>
+                    <dd><a href="#">其他</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+    <div class="footer-url">
+        <p>www.viplus.com&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;沪ICP备0000000000号</p>
+    </div>
+</footer>
+<!-- 页脚 - end -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $('.job-title-icon').click(function () {
+        var oid = $(this).data('show');
+        if($(this).hasClass('icon_down')){
+            $(this).removeClass('icon_down').addClass('icon_up');
+            $('#'+ oid ).css('display','block');
+        }else{
+            $(this).removeClass('icon_up').addClass('icon_down');
+            $('#'+ oid ).css('display','none');
+        }
+    })
+</script>
+</body>
+</html>
